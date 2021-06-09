@@ -2,6 +2,12 @@
 
 Game based on Doodle Jump
 
+## Controls
+
+⬆️ Key up: Straight 
+⬅️ Key left: Left
+➡️ Key right: Right
+
 ## Heart design
 [Here ❤️](src/images/doodle.png)
 
