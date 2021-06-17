@@ -1,8 +1,7 @@
 document.addEventListener('DOMContentLoaded', () =>{
   const grid = document.querySelector('.grid');
   const doodle = document.createElement('img');
-  const startBtn = document.createElement('button');
-  const title = document.createElement('h1');
+  const restartBtn = document.createElement('button');
   let startPoint = 150
   let doodleBottomSpace = startPoint;
   let doodleLeftSpace = 50;
@@ -118,6 +117,13 @@ document.addEventListener('DOMContentLoaded', () =>{
     clearInterval(upTimerId);
     clearInterval(rightTimerId);
     clearInterval(leftTimerId);
+    restartBtn.classList.add('restartBtn');
+    restartBtn.innerHTML = 'Restart';
+    grid.appendChild(restartBtn);
+
+    restartBtn.addEventListener('click', function(e) {
+      location.reload();
+    })
   }
 
   function control(e) {

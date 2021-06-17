@@ -5,6 +5,9 @@
   position: relative;
   font-size: 200px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .doodle {
@@ -23,49 +26,20 @@
   border-radius: 5px;
 }
 
-.btn-start {
-  padding: 0.5rem 2rem;
-  color: white;
+.restartBtn {
   font-size: 1rem;
-  font-family: sans-serif;
-  background-color: rgb(226, 3, 133);
-  border: none;
-  border-radius: 5px;
-  z-index: 10;
-  position: absolute;
   text-align: center;
-  top: 80%;
-  left: 38%;
+  width: 7.5rem;
+  height: 3rem;
+  align-self: center;
+  background-color: rgb(182, 45, 45);
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
   cursor: pointer;
 }
 
-.btn-hidden {
-  display: none;
-  visibility: hidden;
-}
-
-.btn-start:hover {
-  background-color: rgb(255, 68, 146);
-}
-
-p {
-  font-size: 1rem;
-  text-align: center;
-  width: 130px;
-  left: 34%;
-  font-family: sans-serif;
-  line-height: 1.5em;
-  top: 50%;
-}
-
-h1 {
-  font-size: 2.5rem;
-  text-align: center;
-  color: rgb(204, 12, 44);
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  position: absolute;
-  top: 20%;
-  left: 5%;
-  font-weight: bolder;
+.restartBtn:hover {
+  background-color: rgb(223, 52, 52);
 }
